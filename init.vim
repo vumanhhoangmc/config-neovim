@@ -19,6 +19,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " search file
 Plug 'junegunn/fzf.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin' " Git status in NerdTree
 Plug 'jiangmiao/auto-pairs' " AutoPairs
+Plug 'voldikss/vim-floaterm' " Floating Terminal
 
 call plug#end()
 
