@@ -18,6 +18,7 @@ Plug 'ryanoasis/vim-devicons' " vim icon
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " search file
 Plug 'junegunn/fzf.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin' " Git status in NerdTree
+Plug 'jiangmiao/auto-pairs' " AutoPairs
 
 call plug#end()
 
@@ -50,6 +51,11 @@ let g:airline_symbols.linenr = ''
 :set softtabstop=4
 :set mouse=a
 :set encoding=UTF-8
+
+" Disable backup
+"set nobackup
+"set nowb
+"set noswapfile
 
 set expandtab
 set listchars=tab:\¦\       " Tab charactor 
