@@ -1,8 +1,15 @@
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'olimorris/onedarkpro.nvim' " theme for vim
-Plug 'joshdick/onedark.vim' " theme for vim
-Plug 'dracula/vim', { 'as': 'dracula' }
+" themes for vim
+Plug 'olimorris/onedarkpro.nvim' " theme
+Plug 'joshdick/onedark.vim' " theme
+Plug 'dracula/vim', { 'as': 'dracula' } " theme
+Plug 'tomasr/molokai' " theme
+Plug 'sonph/onehalf', { 'rtp': 'vim' } " theme
+Plug 'arcticicestudio/nord-vim' " theme
+Plug 'rakr/vim-one' " theme
+Plug 'kyoz/purify', { 'rtp': 'vim' } " theme
+
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' } " syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " language server
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
@@ -24,7 +31,8 @@ Plug 'voldikss/vim-floaterm' " Floating Terminal
 call plug#end()
 
 syntax on
-colorscheme onedarkpro
+colorscheme purify
+set background=dark " dark background
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
@@ -43,6 +51,8 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+let g:one_allow_italics = 1 " I love italic for comments
+let g:airline_theme='purify' " set theme status bar
 
 :set number
 :set autoindent
