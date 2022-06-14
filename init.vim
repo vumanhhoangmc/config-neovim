@@ -76,6 +76,7 @@ set foldnestmax=1
 set foldlevelstart=0        "  
 set ignorecase              " Enable case-sensitive
 
+
 if has('win32')
   set clipboard=unnamed  
 else
