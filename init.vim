@@ -10,6 +10,7 @@ Plug 'arcticicestudio/nord-vim' " theme
 Plug 'rakr/vim-one' " theme
 Plug 'kyoz/purify', { 'rtp': 'vim' } " theme
 
+Plug 'sheerun/vim-polyglot' " Better syntax-highlighting for filetypes in vim
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' } " syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " language server
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
