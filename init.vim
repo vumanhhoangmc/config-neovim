@@ -63,14 +63,16 @@ let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#hunks#coc_git = 1
 
 set number
+set title 
 set autoindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
-set softtabstop=4
+set softtabstop=2
 set mouse=a
-set encoding=UTF-8
-set cursorline
+set encoding=utf-8
+" set cursorline
+set hidden
 
 " Disable backup
 "set nobackup
@@ -93,3 +95,8 @@ else
 endif
 
 nmap <F8> :TagbarToggle<CR>
+
+" Other setting
+for setting_file in split(glob(stdpath('config').'/settings/*.vim'))
+  execute 'source' setting_file
+endfor
