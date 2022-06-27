@@ -8,19 +8,19 @@ Plug 'tomasr/molokai' " theme
 Plug 'sonph/onehalf', { 'rtp': 'vim' } " theme
 Plug 'arcticicestudio/nord-vim' " theme
 Plug 'rakr/vim-one' " theme
-Plug 'kyoz/purify', { 'rtp': 'vim' } " theme
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 
 Plug 'sheerun/vim-polyglot' " Better syntax-highlighting for filetypes in vim
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' } " syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " language server
-Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
-Plug 'scrooloose/nerdtree' " NerdTree
-Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+Plug 'tpope/vim-surround' " Surrounding ysw)
+Plug 'preservim/nerdtree' " NerdTree
+Plug 'tpope/vim-commentary' " For Commenting gcc & gc
+Plug 'vim-airline/vim-airline' " Status bar
 Plug 'vim-airline/vim-airline-themes'
-Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
-Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
+Plug 'ap/vim-css-color' " CSS Color Preview
+Plug 'terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
+Plug 'preservim/tagbar' " Tagbar for code navigation
 Plug 'ryanoasis/vim-devicons' " vim icon 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " search file
 Plug 'junegunn/fzf.vim'
@@ -36,6 +36,7 @@ set background=dark " dark background
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+let NERDTreeShowHidden=1 "nerdtree show hiden file
 
 let g:airline_theme='deus'
 let g:airline_powerline_fonts = 1
@@ -61,14 +62,15 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#hunks#coc_git = 1
 
-:set number
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-:set mouse=a
-:set encoding=UTF-8
+set number
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set mouse=a
+set encoding=UTF-8
+set cursorline
 
 " Disable backup
 "set nobackup
