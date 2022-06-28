@@ -28,15 +28,13 @@ Plug 'Xuyuanp/nerdtree-git-plugin' " Git status in NerdTree
 Plug 'jiangmiao/auto-pairs' " AutoPairs
 Plug 'voldikss/vim-floaterm' " Floating Terminal
 
+Plug 'sansyrox/vim-python-virtualenv' "virtualenv python in nvim
+
 call plug#end()
 
 syntax on
 colorscheme purify
 set background=dark " dark background
-
-let g:NERDTreeDirArrowExpandable="+"
-let g:NERDTreeDirArrowCollapsible="~"
-let NERDTreeShowHidden=1 "nerdtree show hiden file
 
 set number
 set title 
@@ -63,6 +61,7 @@ set foldnestmax=1
 set foldlevelstart=0        "  
 set ignorecase              " Enable case-sensitive
 
+let g:python3_host_prog='/usr/bin/python3' "python3 host
 
 if has('win32')
   set clipboard=unnamed  
