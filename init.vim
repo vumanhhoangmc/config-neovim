@@ -10,6 +10,7 @@ Plug 'arcticicestudio/nord-vim' " theme
 Plug 'rakr/vim-one' " theme
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 
+Plug 'Pocco81/AutoSave.nvim' " Auto save
 Plug 'sheerun/vim-polyglot' " Better syntax-highlighting for filetypes in vim
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' } " syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " language server
@@ -61,7 +62,7 @@ set foldnestmax=1
 set foldlevelstart=0        "  
 set ignorecase              " Enable case-sensitive
 
-let g:python3_host_prog='/usr/bin/python3' "python3 host
+" let g:python3_host_prog='/usr/bin/python3' "python3 host
 
 if has('win32')
   set clipboard=unnamed  
