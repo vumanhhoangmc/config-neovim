@@ -10,7 +10,8 @@ Plug 'arcticicestudio/nord-vim' " theme
 Plug 'rakr/vim-one' " theme
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 
-Plug 'Pocco81/AutoSave.nvim' " Auto save
+" Plug 'Pocco81/AutoSave.nvim' " Auto save
+Plug '907th/vim-auto-save'
 Plug 'sheerun/vim-polyglot' " Better syntax-highlighting for filetypes in vim
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' } " syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " language server
