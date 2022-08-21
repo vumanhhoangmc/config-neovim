@@ -55,6 +55,8 @@ set hidden
 "set nowb
 "set noswapfile
 
+set nofoldenable "disable foldenable
+
 set expandtab
 set listchars=tab:\¦\       " Tab charactor 
 set list
@@ -63,7 +65,7 @@ set foldnestmax=1
 set foldlevelstart=0        "  
 set ignorecase              " Enable case-sensitive
 
-" let g:python3_host_prog='/usr/bin/python3' "python3 host
+let g:python3_host_prog='/usr/bin/python3' "python3 host
 
 if has('win32')
   set clipboard=unnamed  
