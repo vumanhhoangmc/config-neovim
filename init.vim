@@ -65,7 +65,7 @@ set foldnestmax=1
 set foldlevelstart=0        "  
 set ignorecase              " Enable case-sensitive
 
-let g:python3_host_prog='/usr/bin/python3' "python3 host
+" let g:python3_host_prog='/usr/bin/python3' "python3 host
 
 if has('win32')
   set clipboard=unnamed  
